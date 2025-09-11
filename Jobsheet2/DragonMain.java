@@ -39,5 +39,10 @@ public class DragonMain {
         dragon2.move(2);
         dragon2.printStatus();
 
+        // jika method move() dipanggil persis setelah objek diinstansiasi
+        System.out.println("\n========== Dragon 3 =========="); 
+        Dragon dragon3 = new Dragon(0, 0, 0);
+        dragon3.move(3);
+        dragon3.printStatus();
     }
 }

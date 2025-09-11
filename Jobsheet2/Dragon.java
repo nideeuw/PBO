@@ -5,6 +5,12 @@ public class Dragon {
         this.x = x;
         this.y = y;
         this.direction = direction;
+
+        if (direction >= 1 && direction <= 4) {
+            this.direction = direction;
+        } else {
+            this.direction = 2;
+        }
     }
     void changeDirection(int newDirection){
         if (newDirection >= 1 && newDirection <= 4) {
